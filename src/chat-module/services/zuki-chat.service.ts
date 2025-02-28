@@ -28,15 +28,12 @@ export class ZukiChatService {
     'claude-2',
   ];
 
-  constructor(
-    private readonly httpService: HttpService,
-    private readonly configService: ConfigService,
-  ) {
-    this.API_KEY = this.configService.get<string>('API_KEY');
-    this.systemPrompt = 'You are a helpful assistant.';
-    this.model = 'gpt-3.5';
-    this.temperature = 0.7;
-  }
+  constructor(private readonly httpService: HttpService) {
+  this.API_KEY = 'ISI_API_KEY_DI_SINI'; // Masukkan API Key langsung
+  this.systemPrompt = 'You are a helpful assistant.';
+  this.model = 'gpt-3.5';
+  this.temperature = 0.7;
+}
 
   setModel(newModel: string) {
     if (this.modelsList.includes(newModel)) {
