@@ -29,7 +29,7 @@ export class ZukiChatService {
   ];
 
   constructor(private readonly httpService: HttpService) {
-  this.API_KEY = 'ISI_API_KEY_DI_SINI'; // Masukkan API Key langsung
+  this.API_KEY = 'zu-db0cadcbccf2d7da10149dd37ed00ced'; // Masukkan API Key langsung
   this.systemPrompt = 'You are a helpful assistant.';
   this.model = 'gpt-3.5';
   this.temperature = 0.7;
