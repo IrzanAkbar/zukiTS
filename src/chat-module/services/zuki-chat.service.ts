@@ -7,9 +7,9 @@ import { firstValueFrom } from 'rxjs';
 export class ZukiChatService {
   private readonly API_KEY: string;
   private readonly API_ENDPOINT =
-    'https://zukijourney.xyzbot.net/v1/chat/completions';
+    'https://api.zukijourney.com/v1/chat/completions';
   private readonly API_ENDPOINT_UNFILTERED =
-    'https://zukijourney.xyzbot.net/unf/chat/completions';
+    'https://api.zukijourney.com/unf/chat/completions';
   // A backup endpoint, if appplicable. Usually meant to utilize another API.
   // By default it's set to the WebRaft API due to its rate limit being ideal for testing purposes.
   private API_ENDPOINT_BACKUP =
